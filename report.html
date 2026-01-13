@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Report Lost Item</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header style="display:flex; align-items:center; justify-content:space-between;">
+  <button class="back-btn" onclick="window.location.href='lost.html'">← Back</button>
+  <h1>➕ Report Lost Item</h1>
+  <div style="width:60px;"></div>
+</header>
+
+<div class="card">
+  <form id="reportForm">
+    <input id="itemName" placeholder="Item name" required>
+    <input id="description" placeholder="Description" required>
+
+    <input id="reporterName" placeholder="Your name" required>
+    <input id="reporterPhone" placeholder="Phone number" required>
+
+    <input id="imageUrl" placeholder="Image URL (optional)">
+    <button type="submit">Report Item</button>
+  </form>
+</div>
+
+<script type="module" src="js/report.js"></script>
+</body>
+</html>

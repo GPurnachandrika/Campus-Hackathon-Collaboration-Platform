@@ -1,66 +1,128 @@
 * {
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 body {
   margin: 0;
-  background: #f4f6f8;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  color: #1f2937;
 }
 
+/* HEADER */
 header {
-  background: #1f2937;
-  color: white;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 20px;
   text-align: center;
-  padding: 20px;
+  color: white;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
+/* CARD */
 .card {
   background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
 }
 
-.card h2 {
-  margin-bottom: 15px;
-}
-
-input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
+/* BUTTON */
 button {
-  width: 100%;
-  padding: 10px;
-  background: #2563eb;
+  background: linear-gradient(135deg, #4f46e5, #3b82f6);
   color: white;
   border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
   cursor: pointer;
+  font-size: 16px;
 }
 
 button:hover {
-  background: #1d4ed8;
+  opacity: 0.9;
 }
 
-.output {
-  background: white;
-  margin: 20px;
-  padding: 20px;
+/* INPUT */
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+}
+
+/* DASHBOARD */
+.dashboard {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.dashboard button {
+  width: 220px;
+  height: 120px;
+  font-size: 20px;
+}
+
+/* LOST ITEMS */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li.card {
+  transition: 0.3s;
+}
+
+li.card:hover {
+  transform: translateY(-6px);
+}
+
+/* STATUS */
+.status-lost {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+.status-found {
+  color: #16a34a;
+  font-weight: bold;
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+}
+
+.modal img {
+  max-width: 80%;
+  margin: 5% auto;
+  display: block;
+  border-radius: 12px;
+}
+
+#closeModal {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 36px;
+  color: white;
+  cursor: pointer;
+}
+
+.back-btn {
+  background: rgba(255,255,255,0.15);
+  border: none;
+  color: white;
+  padding: 8px 14px;
   border-radius: 8px;
+  cursor: pointer;
 }
-
-#output p {
-  background: #f9fafb;
-  padding: 8px;
-  border-radius: 5px;
+.back-btn:hover {
+  background: rgba(255,255,255,0.25);
 }

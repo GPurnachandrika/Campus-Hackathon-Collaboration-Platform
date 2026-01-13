@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lost & Found</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header style="display:flex; align-items:center; justify-content:space-between;">
+  <button class="back-btn" onclick="window.location.href='student.html'">← Back</button>
+  <h1>🔍 Lost & Found</h1>
+  <div style="width:60px;"></div>
+</header>
+
+<!-- Admin Info Card -->
+<div class="card" id="adminCard">
+  <h3>🏫 Admin Contact</h3>
+  <p id="adminName"></p>
+  <p id="adminNumber"></p>
+</div>
+
+<!-- Lost Items List -->
+<div class="card">
+  <h3>📋 Reported Items</h3>
+  <ul id="lostItems"></ul>
+</div>
+
+<!-- Report Item Button -->
+<div style="text-align:center; margin:20px;">
+  <button onclick="window.location.href='report.html'" style="padding:10px 20px; font-size:16px;">
+    ➕ Report Lost Item
+  </button>
+</div>
+
+<script type="module" src="js/lost.js"></script>
+</body>
+</html>
+s
