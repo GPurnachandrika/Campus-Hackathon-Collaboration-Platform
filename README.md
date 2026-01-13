@@ -17,3 +17,6 @@ Access restricted to college email authentication only.
 Multi-module real-world campus solution.
 Secure and scalable design.
 Actively maintained.
+
+Techstack: Frontend: HTML,CSS,JS .
+           Backend: FIREBASE,GOOGLE MAPS API ,Express.js,Node.js .
